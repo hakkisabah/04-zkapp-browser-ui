@@ -62,8 +62,9 @@ export default function App() {
         console.log('zkApp compiled');
 
 
-        // B62qrDe16LotjQhPRMwG12xZ8Yf5ES8ehNzZ25toJV28tE9FmeGq23A value shared from https://discord.com/channels/484437221055922177/910549624413102100/1045715631993016330
-        const zkappPublicKey = PublicKey.fromBase58('B62qrDe16LotjQhPRMwG12xZ8Yf5ES8ehNzZ25toJV28tE9FmeGq23A');
+        // if any problem while interacting with wallet use this key and re depoloy the ui => B62qm9bg2vbmifhKEaU3pCZNo3QELNFdBNaJBqppwajkR6wdGt37SJM
+        // this example shared from https://discord.com/channels/484437221055922177/910549624413102100/1045715631993016330
+        const zkappPublicKey = PublicKey.fromBase58('B62qm9bg2vbmifhKEaU3pCZNo3QELNFdBNaJBqppwajkR6wdGt37SJM');
 
         await zkappWorkerClient.initZkappInstance(zkappPublicKey);
 
